@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.flexible{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 1160px;
+}
+.btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 7px;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn i{
+    margin-right: 8px;
+}
+/* header section  */
+/* nav section  */
+.header{
+    background-color: #2D25A0;
+    padding: 42px 0 82px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 36px;
+}
+/* banner section  */
+.banner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.banner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.banner-title h1{
+    color: #fff;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+}
+.banner-title i{
+    margin-left: 8px;
+}
+
+.banner-img img{
+    width: 556px;
+    height: 438px;
+}
+/* players section  */
