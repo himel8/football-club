@@ -1,5 +1,10 @@
+/* ---------------
+ google font 
+---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
+/* ---------------
+ Re-use section 
+---------------- */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -11,7 +16,7 @@ body{
     flex-direction: column;
 }
 .container{
-    width: 1160px;
+    width: 86%;
 }
 .btn a{
     text-decoration: none;
@@ -29,15 +34,21 @@ body{
 .btn i{
     margin-right: 8px;
 }
-/* header section  */
-/* nav section  */
+h1{
+    text-align: left;
+    color: #fff;
+    font-size: 48px;
+    position: relative;
+}
+/* ---------------
+ header section 
+---------------- */
+
+/* ----------- nav section -------------- */
 .header{
     background-color: #2D25A0;
     padding: 42px 0 82px 0;
     position: relative;
-}
-.header:hover .ball{
-    animation: animate 2.5s linear infinite alternate;
 }
 .ball {
     width: 100px;
@@ -46,7 +57,9 @@ body{
     border-radius: 50%;
     position: absolute;
 }
-
+.header:hover .ball{
+    animation: animate 2.5s linear infinite alternate;
+}
 @keyframes animate {
     0%{
         left: 0;
@@ -81,10 +94,12 @@ nav{
     font-size: 16px;
     margin-right: 36px;
 }
-/* banner section  */
+.nav-link a:hover{
+    color: #E02C6D;
+}
+/* ------------- banner section -------------- */
 .banner{
     display: flex;
-    flex-direction: row;
     margin-top: 50px;
 }
 .banner-title{
@@ -93,11 +108,10 @@ nav{
     align-items: flex-start;
     justify-content: center;
 }
-.banner-title h1{
-    color: #fff;
+.title h1{
     font-size: 64px;
     line-height: 80px;
-    font-weight: 700;
+    margin: 0 0 27px 0;
 }
 .banner-title i{
     margin-left: 8px;
@@ -107,40 +121,45 @@ nav{
     width: 556px;
     height: 438px;
 }
-/* main section  */
+/* ---------------
+ Main section 
+---------------- */
 .main{
     margin-top: 70px;
 }
-/* players section  */
+/* --------------- players section ---------------- */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    grid-gap: 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
 }
 .player{
     display: flex;
     flex-direction: column;
     width: 330px;
-    height: 474px;
+    height: 456px;
     padding: 15px;
+    box-shadow: 0px 0px 8px 3px #b8b4b49d;
+    border-radius: 5px;
 }
 .player-img img{
     width: 100%;
 }
 .player-info h3{
     font-size: 28px;
-    line-height: 40px;
+    line-height: 28px;
     margin: 16px 0 10px;
 }
 .player-info p{
     font-size: 16px;
-    line-height: 26px;
+    line-height: 24px;
     font-weight: 400;
     color: #6C6C6C;
     margin: 0;
 }
-/* blog section  */
+/* ------------------ blog section ---------------- */
 .blog{
     display: flex;
     margin: 160px 0;
@@ -150,20 +169,28 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-right: 69px;
 }
 .blog-info h1{
-    font-size: 48px;
+    color: #0A0826;
     line-height: 60px;
+    margin: 0 0 8px 0;
+}
+.blog-info p{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 .blog-info i{
     margin-left: 8px;
 }
-.blog-img img{
-    width: 567px;
-    height: 427px;
+.blog-img{
+    margin-left: 69px;
 }
-/* match schedule  */
+.blog-img img{
+    width: 510px;
+    height: 370px;
+}
+/* ------------------- match schedule --------------- */
 .match-section{
     background-color: #2D25A0;
     width: 100%;
@@ -174,9 +201,6 @@ nav{
 }
 .match-box h1{
     text-align: center;
-    color: #fff;
-    font-size: 48px;
-    position: relative;
 }
 .match-box h1::before{
     content: "";
@@ -229,7 +253,7 @@ nav{
 .match-time h2{
     font-size: 58px;
     font-weight: 400;
-    color: #fdc52c;
+    color: #E02C6D;
     margin: 0 15px 0 0;
 }
 .match-info h4{
@@ -243,7 +267,73 @@ nav{
     margin: 0;
     font-weight: 300;
 }
-/* footer section  */
+/* --------------------- news section ---------------- */
+.news-section h1{
+    text-align: center;
+    color: #0A0826;
+}
+.news{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+.news-box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px 3px #b8b4b49d;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.news-img img{
+    width: 100%;
+}
+.news-description{
+    text-align: center;
+}
+.news-description h3{
+    position: absolute;
+    bottom: 52px;
+    background-color: #fff;
+    transition: transform 0.2s linear;
+}
+.news-box:hover h3{
+    transform: translateY(-49px);
+}
+.news-description p{
+    visibility: hidden;
+    position: absolute;
+    bottom: 60px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 8px;
+    transition: visibility 0.12s linear;
+}
+.news-box:hover .news-description p{
+    visibility: visible;
+}
+.news-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-info p{
+    color: #E02C6D;
+}
+.news-bg {
+    background-color: #E7E7E8;
+    padding: 7px;
+    border-radius: 10px;
+}
+.news-bg i{
+    margin-right: 8px;
+}
+/* ---------------
+ Footer section 
+---------------- */
 footer{
     display: flex;
     flex-direction: column;
@@ -261,7 +351,7 @@ footer{
     font-size: 17px;
     line-height: 32px;
     border-radius: 50%;
-    color: #969BAB;
+    color: #E02C6D;
     text-align: center;
     background-color: #E7E7E8;
     transition: transform 1s linear;
@@ -276,4 +366,143 @@ footer{
 }
 .footer-copyright p:hover{
     color: #E02C6D;
+}
+/* -----------
+Responsive device 
+---------------*/
+/* -------------- mobile device -------------  */
+@media only screen and (max-width: 688px){
+  /*-------- header section -------- */
+   .header{
+       padding: 30px;
+   } 
+  .flexible{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .ball{
+        display: none;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    .nav-link{
+        display: none;
+    }
+    .btn{
+        text-align: left;
+        margin-right: 30px;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-img{
+        margin-top: 50px;
+    }
+    .banner-img img{
+        Width: 300px;
+        Height: 240px;
+    }
+    /*------ main section ------- */
+    .main{
+        margin: 0px;
+    }
+    /* ------- player section -------- */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        width: 75%;
+        margin: 15px;
+    }
+    .player{
+        width: 100%;
+    }
+    /* -------- blog section ---------- */
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        width: 83%;
+        margin: 15px;
+    }
+    .blog-info h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .blog-info p{
+        margin-bottom: 40px
+    }
+    .blog-info .btn{
+        margin-bottom: 29px;
+    }
+    .blog-img{
+        margin: 0;
+    }
+    .blog-img img{
+        width: 290px;
+        height: 225px;
+    }
+    /* ---------- match section  ------------*/
+    .match-box{
+        margin: 0;
+    }
+    .match-box h1{
+        font-size: 32px;
+    }
+    .match-box h1::before, .match-box h1::after{
+        width: 250px;
+        left: 16%;
+    }
+    .match-box h1::after{
+        bottom: -3px;
+    }
+    .matches{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        width: 94%;
+    }
+    .match-schedule{
+        align-items: center;
+    }
+    .match-schedule h3{
+        margin-bottom: 15px;
+    }
+    .match-time{
+        flex-direction: column;
+        padding: 0 5px;
+    }
+    .match-info h4{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .match-info p{
+        text-align: center;
+        margin: 5px 0;
+    }
+    /* -------------- news section ------------ */
+    .news-section h1{
+        font-size: 30px;
+        margin: 20px 0 0 0;
+    }
+    .news{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px 0;
+    }
+    .news-box{
+        width: 75%;
+        margin: 15px;
+    }
+    /* -------------- footer section ------------- */
+    .footer-img img{
+        width: 250px;
+        height: 63px;
+    }
+
 }
