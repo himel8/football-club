@@ -377,8 +377,8 @@ Responsive device
        padding: 30px;
    } 
   .flexible{
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        width: 96%;
     }
     .container{
         width: 100%;
@@ -418,17 +418,18 @@ Responsive device
     /* ------- player section -------- */
     .players{
         grid-template-columns: repeat(1, 1fr);
-        width: 75%;
-        margin: 15px;
+        grid-row-gap: 15px;
+        margin-top: 15px;
     }
     .player{
-        width: 100%;
+        width: 90%;
+        margin:0 10px
     }
     /* -------- blog section ---------- */
     .blog{
         flex-direction: column;
         align-items: center;
-        width: 83%;
+        width: 93%;
         margin: 15px;
     }
     .blog-info h1{
@@ -496,7 +497,7 @@ Responsive device
         margin: 10px 0;
     }
     .news-box{
-        width: 75%;
+        width: 89%;
         margin: 15px;
     }
     /* -------------- footer section ------------- */
@@ -505,4 +506,62 @@ Responsive device
         height: 63px;
     }
 
+}
+/* -------------- Tablate device -------------  */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    /*-------- header section -------- */
+    .header{
+        padding: 30px;
+    } 
+   .flexible{
+       display: block;
+       width: 113%;
+     }
+     .container{
+         width: 100%;
+     }
+     /*------ main section ------- */
+    .main{
+        margin: 0px;
+    }
+    /* ------- player section -------- */
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .player{
+        width: 100%;
+        height: 505px;
+        margin: 0px 16px;
+    }
+    /* -------- blog section ---------- */
+    .blog{
+        width: 100%;
+        margin: 160px 30px;
+        align-items: center;
+    }
+    .blog-info h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0;
+    }
+    .blog-img {
+        margin-left: 10px;
+    }
+    .match-section {
+        width: 107%;
+    }
+    .match-box h1::after, .match-box h1::before{
+        left: 32%;
+    }
+    .news{
+        margin-left: 30px;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin-left: 60px;
+    }
 }
