@@ -435,6 +435,9 @@ Responsive device
         width: 100%;
         margin: 15px;
     }
+    .blog-info{
+        padding-left: 20px;
+    }
     .blog-info h1{
         font-size: 30px;
         line-height: 40px;
