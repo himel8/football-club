@@ -502,6 +502,9 @@ Responsive device
         width: 89%;
         margin: 15px;
     }
+    .news-description h3 {
+        padding-right: 15px;
+    }
     /* -------------- footer section ------------- */
     .footer-img img{
         width: 250px;
