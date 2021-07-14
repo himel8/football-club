@@ -378,6 +378,8 @@ Responsive device
    } 
   .flexible{
         display: inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 96%;
     }
     .container{
