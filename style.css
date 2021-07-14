@@ -550,16 +550,19 @@ Responsive device
     .blog-img {
         margin-left: 10px;
     }
+    /* -------- match section ---------- */
     .match-section {
         width: 107%;
     }
     .match-box h1::after, .match-box h1::before{
         left: 32%;
     }
+    /* -------- news section ---------- */
     .news{
         margin-left: 30px;
         width: 100%;
     }
+    /* -------- footer section ---------- */
     footer {
         width: 100%;
         margin-left: 60px;
